@@ -1,0 +1,24 @@
+#summary How Do I Modify The Roster?
+
+Just drop a jabber.client.RosterManager on the same form as your jabber.client.JabberClient (you *have* followed the directions in this file to get them into your toolbox, right?) Set the Client property on the RosterManager to your JabberClient instance, and you’re up and running.
+
+RosterManager is currently more for local caching of your roster, and not for setting things. That, unfortunately, has to be done relatively manually for now. I’d suggest something like this:
+
+{{{
+// <iq id="jcl_7" type="set">
+//   <query xmlns="jabber:iq:roster">
+//     <item jid="cnn@rss.rifetech.com" name="cnn rss">
+//       <group>RSS</group>
+//     </item>
+//   </query>
+// </iq>
+
+jabber.protocol.iq.RosterIQ riq = new jabber.protocol.iq.RosterIQ(jabberClient1.Document);
+riq.Type = jabber.protocol.client.IQType.set;
+jabber.protocol.iq.Roster r =  (jabber.protocol.iq.Roster) riq.Query;
+jabber.protocol.iq.Item i = r.AddItem();
+i.JID = "cnn@rss.rifetech.com";
+i.Nickname = "cnn rss";
+i.AddGroup("RSS");
+jabberClient1.Write(riq);
+}}}

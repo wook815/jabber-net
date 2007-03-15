@@ -1,0 +1,37 @@
+#summary How do I register a new user?
+
+Set AutoLogin to false.   Do something like this:
+
+{{{
+void jabberClient1_OnLoginRequired(object sender)
+{
+    RegisterIQ riq = new RegisterIQ(jc.Document);
+    riq.Type = IQType.get;
+    Register r = (Register)riq.Query;
+    r.Username = txtUser.Text;
+    jabberClient1.Tracker.BeginIQ(riq, new IqCB(GotRegisterGet), null);
+}
+
+void GotRegisterGet(object sender, IQ iq, object state)
+{
+    // TODO: look in iq to see if user already registered, and ensure 
+    // that we get all of the correct fields filled out.
+    RegisterIQ riq = new RegisterIQ(jc.Document);
+    Register r = (Register)riq.Query;
+    riq.Type = IQType.set;
+    r.Username = txtUser.Text;
+    r.Password = txtPass.Text;
+    jabberClient1.Tracker.BeginIQ(riq, new IqCB(GotRegisterSet), null);
+}
+
+
+void GotRegisterSet(object sender, IQ iq, object state)
+{
+    if (iq.Type != IQType.error)
+    {
+       jabberClient1.User = txtUser.Text;
+       jabberClient1.Password = txtPass.Text;
+       jabberClient1.Login();
+    }
+}
+}}}

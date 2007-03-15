@@ -9,7 +9,7 @@ ERROR: System.IO.IOException: The authentication or decryption has failed. ---> 
 With .Net 2.0, you get:
 
 {{{
-TODO: fill in error
+ERROR: bedrock.net.CertificateException
 }}}
 
 This means that your server has an SSL/TLS certificate that is not signed by a Certificate Authority (CA) that your system trusts.  You can either fix the certificate problem (preferred), or set:

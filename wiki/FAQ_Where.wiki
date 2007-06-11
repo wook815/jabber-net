@@ -1,5 +1,5 @@
-#labels FAQ
-# Where do I get a copy of Jabber-Net?
+#summary Where do I get a copy of Jabber-Net?
+#labels FAQ,Featured
 
 = Introduction =
 

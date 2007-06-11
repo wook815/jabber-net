@@ -1,5 +1,5 @@
 #labels FAQ
-#Where do I get a copy of Jabber-Net?
+# Where do I get a copy of Jabber-Net?
 
 = Introduction =
 
@@ -10,6 +10,7 @@ There is no release version available at the moment.  It's coming soon.  Please 
 
 Directions for getting started with Subversion:
  * Download and install [http://tortoisesvn.tigris.org/ Tortoise SVN]
+ * If you have an HTTP proxy server, in Windows Explorer, right click, select TortoiseSVN/Settings/Network, and enter your details
  * Right click on the directory where you want to check out, select "SVN Checkout"
  * URL of repository: http://jabber-net.googlecode.com/svn/trunk/
  * Hit OK

@@ -1,4 +1,5 @@
 #summary How come I get a certificate error?
+#labels FAQ
 
 In Mono, you get this error:
 

@@ -1,0 +1,16 @@
+#labels FAQ
+#Where do I get a copy of Jabber-Net?
+
+= Introduction =
+
+There is no release version available at the moment.  It's coming soon.  Please download the head of the [http://code.google.com/p/jabber-net/source subversion repository].
+
+
+= Details =
+
+Directions for getting started with Subversion:
+ * Download and install [http://tortoisesvn.tigris.org/ Tortoise SVN]
+ * Right click on the directory where you want to check out, select "SVN Checkout"
+ * URL of repository: http://jabber-net.googlecode.com/svn/trunk/
+ * Hit OK
+ * Build, according to GettingStarted

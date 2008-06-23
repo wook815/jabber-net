@@ -7,3 +7,4 @@
   * [FAQ_More How do I find out more information?]
   * [FAQ_Where Where do I find Jabber-Net?]
   * [FAQ_License How is Jabber-Net licensed?]
+  * [FAQ_GoogleTalk How do I connect to GoogleTalk?]

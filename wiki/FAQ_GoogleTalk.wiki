@@ -63,7 +63,12 @@ jc.NetworkHost = "talk.l.google.com";  // Note: that's an "L", not a "1".
 
 = Google for Domains =
 
+== Turn on Chat ==
+
+From your mail page, go to "Manage this domain", then "Chat", then make sure it says "Disable Chat" at the bottom.  You obviously must be an administrator of your domain to do this.
+
 == DNS ==
+
 If you have your own domain hosted on Google Mail, you can use the XMPP service for that domain as well.  For everything to work correctly, you'll need the following SRV records on your domain.  
 
 {{{

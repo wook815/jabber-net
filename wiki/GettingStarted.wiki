@@ -8,7 +8,8 @@ Jabber-Net is a set of libraries for accessing Jabber functionality from .Net. I
 = How Do I Use Jabber-Net? =
 
   * Create a new windows app in VS.Net.
-  * Right-click in toolbox, select Customize Toolbox
+  * Right-click in toolbox, select "Add Tab".  Name the tab "Jabber-Net"
+  * In the new tab, right-click and select "Choose Items...".
   * Select .the .Net Framework Components tab
   * Click browse, and select jabber-net.dll, prefereably in the bin/Debug directory, where it gets built
   * Do the same for muzzle.dll (UI elements) if you want

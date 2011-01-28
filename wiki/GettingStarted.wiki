@@ -2,7 +2,7 @@
 
 = What Is Jabber-Net? =
 
-Jabber-Net is a set of libraries for accessing Jabber functionality from .Net. It is written in C#, but should be accessible from other .Net languages such as VB.Net. Components exist for connecting to a Jabber server either as a client or as a component. As you explore, you'll find there are some other goodies buried inside, like Trees, CommandLine processing, etc.
+Jabber-Net is a set of libraries for accessing Jabber functionality from .Net. It is written in C#, but should be accessible from other .Net languages such as VB.Net. Classes exist for connecting to a Jabber server either as a client or as a component. As you explore, you'll find there are some other goodies buried inside, like Trees, CommandLine processing, etc.
 
 
 = How Do I Use Jabber-Net? =
